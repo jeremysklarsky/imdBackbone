@@ -29,7 +29,7 @@ require([
 
       if (url) {  // If no url, don't override, let Backbone.sync do its normal fail
           options = options || {};
-          options.url = "https://imdb-on-rails-api.herokuapp.com" + url;
+          options.url = "https://imdb-on-rails-api.herokuapp.com/api/" + url;
       }
 
       // Let normal Backbone.sync do its thing
